@@ -43,8 +43,8 @@ const Charts = () => {
     // ];
 */
     const chartData = [
-            { name: 'Heart rate', averange: '66', data: []},
-            { name: 'Blood oxygen level', averange: '143', data: []}];
+            { name: 'Average Heart rate', averange: '66', data: []},
+            { name: 'Average Blood oxygen level', averange: '143', data: []}];
 
     const daysOfWeek = ['Sun','Mon','Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     chartData[0].data = receiveChartData.map(entry => ({ name: daysOfWeek[entry._id - 1], value: entry.avgHR }));
